@@ -1,0 +1,13 @@
+.avatar-uploader > .ant-upload {
+    width: 350px;
+    height: 500px;
+}
+
+.parsed-img{
+    width: 200px;
+    height: 200px;
+}
+
+.parsed-img:hover{
+    cursor: pointer;
+}

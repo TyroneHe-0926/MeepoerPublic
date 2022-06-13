@@ -1,0 +1,133 @@
+@import './default.less';
+@import "~antd/lib/style/mixins/clearfix.less";
+
+@header-height: 80px;
+
+#header {
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  height: 64px;
+}
+
+#logo {
+  overflow: hidden;
+  padding-left: 40px;
+  float: left;
+  line-height: 64px;
+  text-decoration: none;
+  height: 64px;
+  img {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 16px;
+    width: 32px;
+  }
+  span {
+    color: @primary-color;
+    outline: none;
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+.header-meta {
+  .clearfix();
+  padding-right: 40px;
+}
+
+#menu {
+  float: right;
+  overflow: hidden;
+  height: 64px;
+  .ant-menu {
+    line-height: 60px;
+  }
+  .ant-menu-horizontal {
+    border-bottom: none;
+    & > .ant-menu-item {
+      border-top: 2px solid transparent;
+      &:hover {
+        border-top: 2px solid @primary-color;
+        border-bottom: 2px solid transparent;
+      }
+    }
+    & > .ant-menu-item-selected {
+      border-top: 2px solid @primary-color;
+      border-bottom: 2px solid transparent;
+      a {
+        color: @primary-color;
+      }
+    }
+  }
+}
+
+#preview {
+  padding-top: 17px;
+  float: right;
+  margin-left: 32px;
+  button {
+    border-radius: 32px;
+  }
+}
+
+#preview-button {
+  .ant-btn {
+    color: @site-text-color;
+  }
+}
+
+.cards {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	div {
+		&:nth-child(1) {
+			transform: translate(-50%, -50%) rotate(-16.6666666667deg);
+		}
+		&:nth-child(2) {
+			transform: translate(-50%, -50%) rotate(-8.3333333333deg);
+		}
+		&:nth-child(3) {
+			transform: translate(-50%, -50%) rotate(0deg);
+		}
+		&:nth-child(4) {
+			transform: translate(-50%, -50%) rotate(8.3333333333deg);
+		}
+		&:nth-child(5) {
+			transform: translate(-50%, -50%) rotate(16.6666666667deg);
+		}
+	}
+	&:hover {
+		div {
+			&:nth-child(1) {
+				transform: translate(-50%, -50%) rotate(-20deg);
+			}
+			&:nth-child(2) {
+				transform: translate(-50%, -50%) rotate(-10deg);
+			}
+			&:nth-child(3) {
+				transform: translate(-50%, -50%) rotate(0deg);
+			}
+			&:nth-child(4) {
+				transform: translate(-50%, -50%) rotate(10deg);
+			}
+			&:nth-child(5) {
+				transform: translate(-50%, -50%) rotate(20deg);
+			}
+		}
+	}
+}
+.card {
+	background-size: contain;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+	height: 360px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform-origin: center 120%;
+	transition: transform 1s ease-out;
+	width: 300px;
+}
