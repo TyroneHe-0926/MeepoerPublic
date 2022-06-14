@@ -1,6 +1,6 @@
 <h1>Generate Your Own Social Media Post in One Click with Meepoer</h1>
 
-[3.99.16.231](http://3.99.16.231)
+[meepoer.app](http://www.meepoer.app)
 
 <h2>Contents:</h2>
 <ul>
@@ -37,7 +37,7 @@
   - EC2 t3a.xlarge spot instance
   - S3 for storage
 
-- Local GPU Machine
+- Local GPU Machine (offline as of June 13th 2022)
   - Ubuntu 18.04
   - Ryzen 3, GTX 1050ti 4GB, 48GB RAM
 
