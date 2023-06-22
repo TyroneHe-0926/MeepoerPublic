@@ -25,9 +25,8 @@ function Page2() {
             </p>
             <div className='site-card-wrapper'>
             <Row justify="center" gutter={[48, 24]}>
-              <Col md={20} lg={8}>              
-              
-                <Card hoverable title='Post-to-Post'>
+              <Col color='black' md={20} lg={8}>              
+                <Card style={{boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"}} hoverable title='Post-to-Post'>
                 <div className='intro-text'>
                   Upload your own picture and a topic and we will find similar pictures and
                   AI-generated captions/content for your next post. Start here if you have an
@@ -41,7 +40,7 @@ function Page2() {
               </Col>
               <Col md={20} lg={8}>
               
-                <Card hoverable title='Text-to-Post'>
+                <Card style={{boxShadow: "0 3px 10px rgb(0 0 0 / 0.2)"}} hoverable title='Text-to-Post'>
                   <div className='intro-text'>
                     Upload your own topic and we will find related pictures and
                     AI-generated captions/content for your next post. Start here if you don't have 

@@ -13,13 +13,7 @@ develop-eggs/
 dist/
 tmp/
 movienet-tools/
-app/meepoer/build.
-app/meepoer/config
-app/meepoer/config/
-app/meepoer/scripts/
 app/meepoer/node_modules
-app/meepoer/package.json
-app/meepoer/package-lock.json
 downloads/
 eggs/
 .eggs/

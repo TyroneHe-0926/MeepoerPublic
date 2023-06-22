@@ -6,6 +6,12 @@ import { Button } from 'antd';
 // use cases: blog idea/outline, email, youtube video description, thumbnail
 // continued: social media posts, video, business ideas.
 
+import fireworks from './static/img/fireworks_post.png';
+import ramen from './static/img/ramen_post.png';
+import hiking from './static/img/hiking_post.png';
+import setup from './static/img/setup_post.png';
+import wedding from './static/img/wedding_post.png';
+
 function Banner(props) {
 
   return (
@@ -35,11 +41,11 @@ function Banner(props) {
       </QueueAnim>
       <div className="banner-image-wrapper">
         <div class="cards">
-          <div class="card" style={{backgroundImage: `url("https://meepoerdata.s3.ca-central-1.amazonaws.com/web-asset/fireworks+post.PNG")`, backgroundSize: '100% 100%'}}></div>
-          <div class="card" style={{backgroundImage: `url("https://meepoerdata.s3.ca-central-1.amazonaws.com/web-asset/setup+post.PNG")`, backgroundSize: '100% 100%'}}></div>
-          <div class="card" style={{backgroundImage: `url("https://meepoerdata.s3.ca-central-1.amazonaws.com/web-asset/wedding+post.PNG")`, backgroundSize: '100% 100%'}}></div>
-          <div class="card" style={{backgroundImage: `url("https://meepoerdata.s3.ca-central-1.amazonaws.com/web-asset/hiking+post.PNG")`, backgroundSize: '100% 100%'}}></div>
-          <div class="card" style={{backgroundImage: `url("https://meepoerdata.s3.ca-central-1.amazonaws.com/web-asset/ramen+post.PNG")`, backgroundSize: '100% 100%'}}></div>
+          <div class="card" style={{backgroundImage: `url(${fireworks})`, backgroundSize: '100% 100%'}}></div>
+          <div class="card" style={{backgroundImage: `url(${setup})`, backgroundSize: '100% 100%'}}></div>
+          <div class="card" style={{backgroundImage: `url(${wedding})`, backgroundSize: '100% 100%'}}></div>
+          <div class="card" style={{backgroundImage: `url(${hiking})`, backgroundSize: '100% 100%'}}></div>
+          <div class="card" style={{backgroundImage: `url(${ramen})`, backgroundSize: '100% 100%'}}></div>
         </div>
       </div>
     </div>
